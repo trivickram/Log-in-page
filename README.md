@@ -2,7 +2,7 @@
 
 A modern and responsive **Login & Register** page with smooth animations and user-friendly design.  
 
-🌐 **Live Demo:** [spidy-login.vercel.app](https://spidy-login.vercel.app)  
+🌐 **Live Demo:** [spidy-login.vercel.app](https://spidy-sigma.vercel.app)  
 
 ---
 
@@ -36,5 +36,5 @@ A modern and responsive **Login & Register** page with smooth animations and use
 
 ### 📥 Clone the Repository  
 ```sh
-git clone https://github.com/YOUR-USERNAME/spidy-login.git
-cd spidy-login
+git clone https://github.com/YOUR-USERNAME/spidy-sigma.git
+cd spidy-sigma

@@ -82,7 +82,7 @@
               localStorage.setItem("token", data.token); // Save token for authentication
               setTimeout(() => {
                 window.location.href = "https://trivickram.vercel.app";
-              }, 3000); // 3000ms = 3 seconds
+              }, 500); // 3000ms = 3 seconds
             } else {
               alert(data.error || "Login failed!");
             }

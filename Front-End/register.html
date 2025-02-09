@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Page</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Roboto:wght@100..900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>    
+    <div class="wrapper">
+      <form id="registerForm">
+        <h1><span class="letter">R</span>egister <span class="letter">H</span>ere</h1>
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Name" required />
+            <i class='bx bx-ghost'></i>
+        </div>
+        <div class="input-box">
+          <input type="email" id="email" placeholder="Email" required />
+          <i class='bx bxl-gmail'></i>
+        </div>
+        <div class="input-box">
+            <input type="text" id="phone" placeholder="Phone number" required/>
+            <style>input[type="number"]::-webkit-inner-spin-button,
+              input[type="number"]::-webkit-outer-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+              }
+              </style>
+            <i class='bx bx-phone'></i>
+        </div>
+        <div class="input-box">
+          <input type="password" id="password" placeholder="Password" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        
+        <button type="submit" class="btn">Register</button>
+        <div class="register">
+          <p>
+            Already have an Account? <a href="index.html"><span class="letter">Log in</span></a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <!-- JavaScript to Send Data to Backend -->
+    <script>
+      document.getElementById("registerForm").addEventListener("submit", async function(event) {
+          event.preventDefault(); // Prevent form from reloading
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const password = document.getElementById("password").value;
+
+          const response = await fetch("http://localhost:3000/register", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ name, email, phone, password })
+          });
+
+          const data = await response.json();
+          alert(data.message || data.error);
+      });
+    </script>
+  </body>
+</html>

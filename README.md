@@ -2,7 +2,7 @@
 
 A modern and responsive **Login & Register** page with smooth animations and user-friendly design.  
 
-🌐 **Live Demo:** [spidy-login.vercel.app](https://spidy-sigma.vercel.app)  
+🌐 **Live Demo:** [spidy-sigma.vercel.app](https://spidy-sigma.vercel.app)  
 
 ---
 

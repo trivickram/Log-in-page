@@ -1,107 +1,104 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('https://4kwallpapers.com/images/walls/thumbs_2t/1902.png') no-repeat;
-    background-size: cover;
-    background-position: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://4kwallpapers.com/images/walls/thumbs_2t/1902.png")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.wrapper{
-    
-    width: 400px;
-    color: #fff;
-    background: transparent;
-    border-radius: 15px;
-    padding: 30px 40px;
-    border:2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(15px);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+.wrapper {
+  width: 400px;
+  color: #fff;
+  background: transparent;
+  border-radius: 15px;
+  padding: 30px 40px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.wrapper h1{
-    text-align: center;
-    font-size: 40px;
+.wrapper h1 {
+  text-align: center;
+  font-size: 40px;
 }
-.wrapper .input-box{
-    position: relative;
-    /* background-color: darkgreen; */
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-
+.wrapper .input-box {
+  position: relative;
+  /* background-color: darkgreen; */
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
 }
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border:2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
+.wrapper .letter {
+  color: rgb(198, 25, 25);
 }
-.input-box input::placeholder{
-    color: #fff;
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
 }
-.input-box i{
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
+.input-box input::placeholder {
+  color: #fff;
 }
-.wrapper .check-forgot{
-    display: flex;
-    justify-content: space-between;
-    margin: -15px 0px 15px;
+.input-box i {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
 }
-.check-forgot label input{
-    accent-color: #fff;
-    text-decoration: none;
-    margin-right: 4px;
+.wrapper .check-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0px 15px;
 }
-.check-forgot a{
-    text-decoration: none;
-    color: #fff;
+.check-forgot label input {
+  accent-color: #fff;
+  text-decoration: none;
+  margin-right: 4px;
 }
-.check-forgot a:hover{
-    text-decoration: underline;
+.check-forgot a {
+  text-decoration: none;
+  color: #fff;
 }
-.wrapper .btn{
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #666;
-    font-weight: 700;
-
-
+.check-forgot a:hover {
+  text-decoration: underline;
 }
-.wrapper .register{
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0px 15px;
-
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  font-weight: 700;
 }
-.register p a{
-    text-decoration: none;
-    color: #fff;
+.wrapper .register {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0px 15px;
 }
-.register p a:hover{
-    text-decoration: underline;
+.register p a {
+  text-decoration: none;
+  color: #fff;
+}
+.register p a:hover {
+  text-decoration: underline;
 }

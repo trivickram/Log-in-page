@@ -26,7 +26,9 @@ A modern and responsive **Login & Register** page with smooth animations and use
 
 ## 📸 Screenshots  
 
-📌 *Include screenshots of your login & register pages here*  
+![image](https://github.com/user-attachments/assets/ce1f2d65-6679-43fa-92a3-73ccf6080785)
+![image](https://github.com/user-attachments/assets/94ff25a6-7e3c-4897-8075-7444a17eb3e5)
+
 
 ---
 

@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Page Title</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -19,27 +19,36 @@
   <body>
     <div class="wrapper">
       <form action="">
-        <h1><span class="letter">L</span>og <span class="letter">I</span>n</h1>
-
+        <h1><span class="letter">R</span>egister <span class="letter">H</span>ere</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Name" required />
+            <i class='bx bx-ghost'></i>
+          </div>
         <div class="input-box">
           <input type="email" placeholder="Email" required />
-          <i class="bx bxs-user"></i>
+          <i class='bx bxl-gmail'></i>
         </div>
+        <div class="input-box">
+            <input type="number" placeholder="Phone number"/>
+            <style>
+                input[type="number"]::-webkit-inner-spin-button, 
+                input[type="number"]::-webkit-outer-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+              </style>
+            <i class='bx bx-phone'></i>
+          </div>
         <div class="input-box">
           <input type="password" placeholder="password" required />
           <i class="bx bxs-lock-alt"></i>
         </div>
-        <div class="check-forgot">
-          <label>
-            <input type="checkbox" /><span class="letter">Remember</span> me
-          </label>
-          <a href="#">Forgot password</a>
-        </div>
-        <button type="submit" class="btn">Log in</button>
+        
+        <button type="submit" class="btn">Register</button>
         <div class="register">
           <p>
-            Don't have an account?<a href="register.html"
-              ><span class="letter">Register</span></a
+            Already have an Account?<a href="index.html"
+              ><span class="letter">Log in</span></a
             >
           </p>
         </div>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="marvel.png">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -53,6 +54,7 @@
           </p>
         </div>
       </form>
+      
     </div>
 
     <script>
@@ -82,7 +84,7 @@
               localStorage.setItem("token", data.token); // Save token for authentication
               setTimeout(() => {
                 window.location.href = "https://trivickram.vercel.app";
-              }, 500); // 3000ms = 3 seconds
+              }, 500); 
             } else {
               alert(data.error || "Login failed!");
             }

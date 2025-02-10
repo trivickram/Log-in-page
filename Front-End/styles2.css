@@ -89,6 +89,10 @@
     color: #fff;
     font-weight: 700;
   }
+  .btn:active{
+    background-color: transparent;
+    color:rgb(74, 55, 222); ;
+  }
   .wrapper .register {
     font-size: 14.5px;
     text-align: center;

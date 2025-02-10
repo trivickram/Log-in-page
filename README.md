@@ -3,7 +3,7 @@
 
 # 🕷 **Spidy Login - Secure Authentication System**  
 
-🚀 **Live Demo:** [Spidy Sigma](https://spidy-sigma.vercel.app/)  
+🚀 **Live Demo:** [Spidy Panty](https://spidy-panty.vercel.app/)  
 🌐 **Backend API:** [Render Backend](https://log-in-page-tgu8.onrender.com/login)  
 💼 **After Login Redirects To Portfolio:** [trivickram.vercel.app](https://trivickram.vercel.app/)  
 

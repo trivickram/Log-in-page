@@ -2,86 +2,113 @@
 <html lang="en">
   <head>
     <title>Register</title>
-    
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-     
-      <meta name="description" content="Create your Spidy account now! Register securely and join the superhero network.">
-      <meta name="author" content="Trivickram">
-      <meta name="theme-color" content="#000000"> <!-- Black Panther Theme -->
-      <meta name="keywords" content="Register, Signup, Spidy, Superhero Registration, Secure Account">
-      <meta name="robots" content="index, follow">
-      
-      <!-- Preload Key Assets (For Faster Loading) -->
-      <link rel="preload" href="styles2.css" as="style">
-      <link rel="preload" href="script.js" as="script">
-      <link rel="preload" href="mask.png" as="image">
-      <link rel="dns-prefetch" href="//fonts.googleapis.com">
-      <link rel="dns-prefetch" href="//unpkg.com">
-      
-      <!-- Social Media Preview (Black Panther Theme) -->
-      <meta property="og:title" content="Spidy Signup - Join the Superhero Network">
-      <meta property="og:description" content="Sign up for a secure and fast superhero authentication experience.">
-      <meta property="og:image" content="https://spidy-panty.vercel.app/mask.png">
-      <meta property="og:url" content="https://spidy-panty.vercel.app/register">
-      <meta property="og:type" content="website">
-      
-      <!-- Twitter Card -->
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:title" content="Spidy Signup">
-      <meta name="twitter:description" content="Join the Spidy network and get secure superhero authentication.">
-      <meta name="twitter:image" content="https://spidy-panty.vercel.app/mask.png">
-      
-      <!-- Security & Performance -->
-      
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-      <meta http-equiv="Pragma" content="no-cache">
-      <meta http-equiv="Expires" content="0">
-      <meta name="format-detection" content="telephone=no">
-      
-      <!-- Favicon (Black Panther) -->
-      <link rel="icon" type="image/png" href="mask.png">
-      
-      <!-- Stylesheet -->
-      <link rel="stylesheet" href="styles2.css">
- 
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Create your Spidy account now! Register securely and join the superhero network."
+    />
+    <meta name="author" content="Trivickram" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="keywords"
+      content="Register, Signup, Spidy, Superhero Registration, Secure Account"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preload" href="styles2.css" as="style" />
+    <link rel="preload" href="script.js" as="script" />
+    <link rel="preload" href="mask.png" as="image" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//unpkg.com" />
+
+    <meta
+      property="og:title"
+      content="Spidy Signup - Join the Superhero Network"
+    />
+    <meta
+      property="og:description"
+      content="Sign up for a secure and fast superhero authentication experience."
+    />
+    <meta
+      property="og:image"
+      content="https://spidy-panty.vercel.app/mask.png"
+    />
+    <meta property="og:url" content="https://spidy-panty.vercel.app/register" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Spidy Signup" />
+    <meta
+      name="twitter:description"
+      content="Join the Spidy network and get secure superhero authentication."
+    />
+    <meta
+      name="twitter:image"
+      content="https://spidy-panty.vercel.app/mask.png"
+    />
+
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" type="image/png" href="mask.png" />
+
+    <link rel="stylesheet" href="styles2.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body>    
+  <body>
     <div class="wrapper">
       <form id="registerForm">
-        <h1><span class="letter">R</span>egister <span class="letter">H</span>ere</h1>
+        <h1>
+          <span class="letter">R</span>egister <span class="letter">H</span>ere
+        </h1>
         <div class="input-box">
-            <input type="text" id="name" placeholder="Name" required />
-            <i class='bx bx-ghost'></i>
+          <input type="text" id="name" placeholder="Name" required />
+          <i class="bx bx-ghost"></i>
         </div>
         <div class="input-box">
           <input type="email" id="email" placeholder="Email" required />
-          <i class='bx bxl-gmail'></i>
+          <i class="bx bxl-gmail"></i>
         </div>
         <div class="input-box">
-            <input type="text" id="phone" placeholder="Phone number" required/>
-            <style>input[type="number"]::-webkit-inner-spin-button,
-              input[type="number"]::-webkit-outer-spin-button {
-                  -webkit-appearance: none;
-                  margin: 0;
-              }
-              </style>
-            <i class='bx bx-phone'></i>
+          <input type="text" id="phone" placeholder="Phone number" required />
+          <style>
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          </style>
+          <i class="bx bx-phone"></i>
         </div>
         <div class="input-box">
-          <input type="password" id="password" placeholder="Password" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
           <i class="bx bxs-lock-alt"></i>
         </div>
-        
+
         <button type="submit" class="btn">Register</button>
         <div class="register">
           <p>
-            Already have an Account? <a href="index.html"><span class="letter">Log in</span></a>
+            Already have an Account?
+            <a href="index.html"><span class="letter">Log in</span></a>
           </p>
         </div>
       </form>
@@ -89,7 +116,9 @@
 
     <!-- JavaScript to Send Data to Backend -->
     <script>
-      document.getElementById("registerForm").addEventListener("submit", async function(event) {
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", async function (event) {
           event.preventDefault(); // Prevent form from reloading
 
           const name = document.getElementById("name").value;
@@ -97,15 +126,18 @@
           const phone = document.getElementById("phone").value;
           const password = document.getElementById("password").value;
 
-          const response = await fetch("https://log-in-page-tgu8.onrender.com/register", {
+          const response = await fetch(
+            "https://log-in-page-tgu8.onrender.com/register",
+            {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ name, email, phone, password })
-          });
+              body: JSON.stringify({ name, email, phone, password }),
+            }
+          );
 
           const data = await response.json();
           alert(data.message || data.error);
-      });
+        });
     </script>
   </body>
 </html>

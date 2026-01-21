@@ -3,30 +3,36 @@
 ## Issues Resolved
 
 ### 1. ✅ NoSQL Injection Prevention (Issues #3, #4)
+
 **Risk Level:** High  
 **Lines:** 42, 65 (originally)
 
 **Fix Applied:**
+
 - Added `express-mongo-sanitize` middleware to strip out `$` and `.` characters from user input
 - Implemented `express-validator` to validate and sanitize all user inputs
 - Added explicit email normalization and validation
 - Changed from implicit to explicit parameter passing in Mongoose queries
 
 ### 2. ✅ Rate Limiting (Issues #1, #2)
+
 **Risk Level:** High  
 **Lines:** 37, 62 (originally)
 
 **Fix Applied:**
+
 - Implemented `express-rate-limit` middleware
 - Limited authentication endpoints to 5 requests per 15 minutes per IP
 - Prevents brute-force attacks on login/register endpoints
 - Returns clear error messages when rate limit is exceeded
 
 ### 3. ✅ CORS Configuration (Issue #5)
+
 **Risk Level:** Medium  
 **Line:** 14 (originally)
 
 **Fix Applied:**
+
 - Removed wildcard (`*`) origin policy
 - Implemented whitelist-based CORS with configurable allowed origins
 - Added support for environment-based CORS configuration
@@ -62,6 +68,7 @@ ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:5500,https://yourdomain.c
 ## Testing
 
 After deployment, verify:
+
 - [ ] Rate limiting triggers after 5 failed login attempts
 - [ ] Only whitelisted origins can make requests
 - [ ] Invalid inputs return proper validation errors
